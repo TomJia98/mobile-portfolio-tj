@@ -1,0 +1,239 @@
+body {
+  background-image: url("./images/background.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100%;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+header {
+  background-color: rgb(170, 34, 24);
+  width: 40%;
+  position: relative;
+  border-radius: 20px;
+  margin: 15px;
+  animation-name: header;
+  animation-duration: 2.5s;
+}
+
+header h1 {
+  font-size: 50px;
+  display: inline;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  position: relative;
+  bottom: 30px;
+}
+
+header img {
+  width: 25%;
+  height: 25%;
+  border-radius: 100px;
+  padding: 25px;
+  display: inline;
+}
+
+nav ul {
+  font-size: 20px;
+  line-height: 40px;
+  background-color: rgb(28, 128, 128);
+  display: flex;
+  border-radius: 20px;
+  padding-right: 30px;
+  width: fit-content;
+  margin: 15px;
+  position: relative;
+  animation-name: nav;
+  animation-duration: 2.5s;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+nav li {
+  padding-left: 40px;
+}
+
+nav a:link {
+  text-decoration: none;
+  color: black;
+}
+
+nav a:visited {
+  color: black;
+}
+
+nav a:hover {
+  background-color: rgb(26, 109, 109);
+  padding: 9px;
+}
+
+content p {
+  margin: 15px;
+}
+
+content h2 {
+  font-size: 30px;
+  margin: 15px;
+}
+main {
+  animation-name: main;
+  animation-duration: 3s;
+  transition-timing-function: linear;
+}
+
+main a {
+  padding: 5px;
+}
+main a:link {
+  text-decoration: none;
+}
+
+main ul {
+  margin-top: 50px;
+}
+
+main li {
+  display: inline;
+  background-color: rgb(170, 34, 24);
+  position: relative;
+  bottom: 8px;
+  padding: 7px;
+  border-radius: 8px;
+}
+
+main li a:link {
+  color: black;
+}
+
+main li:hover {
+  background-color: rgba(133, 33, 26);
+  color: black;
+}
+
+.contact div {
+  background-color: rgb(28, 128, 128);
+  margin-left: 15px;
+  padding: 20px;
+  border-radius: 20px;
+  width: 30%;
+  animation-name: main;
+  animation-duration: 3s;
+  transition-timing-function: linear;
+}
+
+.contact li {
+  padding: 20px;
+  font-size: 20px;
+}
+.contact a {
+  padding: 20px;
+}
+
+.contact a:link {
+  text-decoration: none;
+  color: black;
+}
+
+.Proitem {
+  background-color: rgb(170, 34, 24);
+  padding: 30px;
+  width: fit-content;
+  max-width: 50%;
+  border-radius: 20px;
+  margin-top: 10px;
+}
+
+.Proitem h3 {
+  font-size: 30px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.Proitem p {
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+.Proitem img {
+  max-width: 90%;
+  max-height: 75%;
+  box-shadow: 7px 7px 3px rgb(131, 114, 114, 0.5);
+}
+
+.projects div {
+  display: none;
+}
+
+.projects div:target {
+  display: block;
+}
+
+#projects {
+  margin: 20px;
+}
+
+#about-me div {
+  background-color: rgb(170, 34, 24);
+  border-radius: 20px;
+  width: fit-content;
+  margin: 15px;
+  position: relative;
+  animation-name: about-me;
+  animation-duration: 2.5s;
+  padding: 15px;
+}
+
+@media screen and (max-width: 790px) {
+  main li {
+    display: block;
+    max-width: 80%;
+    border-radius: 10px;
+  }
+  header {
+    width: 90%;
+  }
+  .contact div {
+    width: 80%;
+  }
+  nav ul {
+    display: block;
+  }
+}
+
+@keyframes main {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes header {
+  0% {
+    right: 550px;
+  }
+  100% {
+    right: 0px;
+  }
+}
+
+@keyframes nav {
+  0% {
+    left: 1920px;
+  }
+  100% {
+    left: 0px;
+  }
+}
+
+@keyframes about-me {
+  0% {
+    right: 1920px;
+  }
+
+  100% {
+    right: 0px;
+  }
+}
