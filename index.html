@@ -31,9 +31,11 @@
    <content id="about-me">
        <div>
        <h2>About Me</h2>
-       <p>Hello, my name is Tom Jia and I am currently studying coding at the University of Western Australia. <br>
-            I found an interest in coding after being given a basic Arduino kit by a friend and realizing how in depth some of the code got for even simple projects.
-            <br> I hope to use the skill I learn in my current course to assist the current climate catastrophe.
+       <p>Hello and welcome to my Portfolio! <br> <br>
+        My name is Tom Jia and I am a dedicated Full Stack Developer currently studying at the University of Western Australia. <br><br>
+        I found an interest in coding back in 2018 after I watch YouTube Evil Mastermind Micheal Reeves using facial recognition software to <br>
+        track and point a laser into someones eye. <br> <br>
+        Although this was my intro into coding, I plan on using my powers for good.
     </p>
         </div>
     </content>
@@ -41,30 +43,36 @@
    <main id="projects" class="projects">
        <ul>
            <li><a href="#pro1">Tunesplice</a></li>
-           <li><a href="#pro2">Horiseon Homepage</a></li>
+           <li><a href="#pro2">Junglr</a></li>
            <li><a href="#pro3">Work-Day Planner</a></li>
            <li><a href="#pro4">Weather Scheduler</a></li>
-           <li><a href="#pro5">Code Quiz</a></li>
+           <li><a href="#pro5">Project 3</a></li>
        </ul>
 
        <div id="pro1" class="Proitem"> 
            <h3>TuneSplice</h3>
-           <p>As our first main group project, my group created TuneSplice.<br> Tunesplice is game that dynamically changes the lyrics of current top chart songs
-            for you to guess <br> <br> <a href="https://tomjia98.github.io/Project_Wunners/"><img src="assets/images/TuneSplice.png" alt="tunesplice homepage"></a>
+           <p>The first major project I undertook, TuneSplice. <br> It is a front end application made in partnership with 2 other people in my UWA class,
+            <a target=”_blank” href="https://tahlialg.github.io/professional-portfolio/">Tahlia</a> and <a target=”_blank” href="https://github.com/JackoWray">Jackson</a> <br>
+           Tunesplice is game that dynamically changes the lyrics of current top chart songs.<br> TuneSplice then displays them to you with a timer for you to try and guess what the original song was.
+            <br> <br> <a href="https://tomjia98.github.io/Project_Wunners/"><img src="assets/images/TuneSplice.png" alt="tunesplice homepage"></a>
                     </p>
        </div>
 
        <div id="pro2" class="Proitem"> 
-        <h3>Horiseon Homepage</h3>
-        <p>For my first homework project i had to refactor some code that was given to me. <br> <br><a href="https://tomjia98.github.io/Horiseon_TJ/"><img src="assets/images/Horiseon.png" alt="horiseon homepage screenshot"></a></p>
+        <h3>Junglr</h3>
+        <p>The second major team project i had undertaken at the time, as well as the first major full stack application, was Junglr <br> <br> Also made in conjunction with 2 other people from my 
+            UWA course, <a href="https://wratten.github.io/Portfolio/" target=”_blank”>Daniel</a> and <a href="https://chentriangoes.github.io/Yi-Tsun-Chen/" target=”_blank”>Yi-Tsun Chen</a><br><br>
+            Junglr is a Monkey themed social media website, which encrypts all the users data to anyone who isnt signed up. <br>This encryption is learnable, so if someone spends enough time on this webiste, they 
+          can learn to speak monkey.<br> It also features live refresh using websockets, as well as reacts and comments on posts.</p>
+          <a href="https://project-2-dw.herokuapp.com/"><img src="assets/images/junglr.png" alt="junglr homepage"></a>
     </div>
 
     <div id="pro3" class="Proitem"> 
-        <h3>Work-Day Planner</h3>
-        <p>This website has been created to assist in recording your daily plans. <br>
-        It updates based on what the current time is, and clears itself every new day. <br>
-    <br>
-<a href="https://tomjia98.github.io/work_day_scheduler_TJ/"><img src="assets/images/Work-Day.png" alt="work-day scheduler homepage"></a></p>
+        <h3>Employee Tracker</h3>
+        <p>This backend Node.j program to help the head of a company keep track of their employees <br>
+            This project was one of my first ones to fully utilize sequilize to create the backend database. <br>
+            View or download the code <a href="https://github.com/TomJia98/employee-tracker" target=”_blank”>here</a>
+            <img src="./assets/images/employee tracker.png"></p>
     </div>
 
     <div id="pro4" class="Proitem"> 
@@ -75,9 +83,9 @@
     </div>
 
     <div id="pro5" class="Proitem"> 
-        <h3>Code Quiz</h3>
-        <p>This webpage is a quiz on javascript, with the ability to save your scores at the end.<br> <br>
-        <a href="https://tomjia98.github.io/code_quiz_TJ/"><img src="assets/images/quiz.png" alt="quiz homepage"></a></p>
+        <h3>Project 3</h3>
+        <p>This project will be my 3rd and final major project through UWA, check this space for progress! <br><br><br></p>
+  <img src="./assets/images/underconstruction.jpg" alt="under construction">
     </div>
 
    </main>
@@ -95,6 +103,18 @@
         </ul>
     </div>
    </content>
+
+<script>
+
+    
+function checkVH () {
+    
+    if (screen.height > 1000)
+    {window.location.href = "https://tomjia98.github.io/mobile-portfolio-tj/";}
+    }
+    setInterval(checkVH, 100)
+
+</script>
 
 </body>
 </html>
