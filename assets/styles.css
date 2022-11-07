@@ -140,7 +140,7 @@ main li:hover {
   background-color: rgb(170, 34, 24);
   padding: 30px;
   width: fit-content;
-  max-width: 50%;
+  max-width: 90%;
   border-radius: 20px;
   margin-top: 10px;
 }
